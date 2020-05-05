@@ -7,11 +7,11 @@ var enemyHealth = 50;
 var enemyAttack = 12;
 var playerMoney = 10;
 
-
 var fight = function(enemyName) {
     if (playerHealth > 0) {
         window.alert("Welcome to Robot Gladiators! Round " + (i + 1));
     }
+
 
     // fight function statements
 while (playerHealth > 0 && enemyHealth > 0) {
@@ -65,16 +65,18 @@ break;
      // leave while () loop if player is dead
    break;
     } 
-    
+
     else {
-      window.alert(playerName + " still has " + playerHealth + " health left.");
-   }
-  }
-};
-for (var i = 0; i < enemyNames.length; i++) {
-    var pickedEnemyName = enemyNames[i];
-    enemyHealth = 50;
-    fight(pickedEnemyName);
+        window.alert(playerName + " still has " + playerHealth + " health left.");
+     }
+    }
+  };
+  for (var i = 0; i < enemyNames.length; i++) {
+      var pickedEnemyName = enemyNames[i];
+      enemyHealth = 50;
+      fight(pickedEnemyName);
+        
       
-    
-}
+  }
+
+
