@@ -27,7 +27,11 @@ var startGame = function() {
     }
 
   }
+
+      // after the loop ends, player is either out of health or enemies to fight, so run the endGame function
+  endGame();
 };
+
 
     // function to end the entire game
 var endGame = function() {
