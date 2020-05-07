@@ -44,14 +44,17 @@ var startGame = function() {
 
   //function for enter shop
   var shop = function() {
-    console.log("entered the shop");
+      // ask player what they'd like to do
+      var shopOptionPrompt = window.prompt(
+        "Would you like to REFILL your health, UPGRADE your attack, or LEAVE the store? Please enter one: 'REFILL', 'UPGRADE', or 'LEAVE' to make a choice."
+      );
   };
 
 
 
 
      // function to end the entire game
-var endGame = function() {
+  var endGame = function() {
       window.alert("The game has now ended. Let's see how you did!");
       if (playerHealth > 0) {
         window.alert("Great job, you've survived the game! You now have a score of " + playerMoney + ".");
