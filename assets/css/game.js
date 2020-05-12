@@ -38,12 +38,15 @@ var startGame = function() {
     }
 
       // after the loop ends, player is either out of health or enemies to fight, so run the endGame function
-  endGame();
+  
+
   };
+  
+  endGame();
 }
 
               // function to generate a random numeric value
-              var randomNumber = function(min, max) {
+ var randomNumber = function(min, max) {
                 var value = Math.floor(Math.random() * (max - min + 1) + min);
               
                 return value;
@@ -146,10 +149,10 @@ var fight = function(enemyName) {
               if (confirmSkip) {
                         window.alert(playerName + " has decided to skip this fight. Goodbye!");
                         
-// generate random damage value based on player's attack power
-var damage = randomNumber(playerAttack - 3, playerAttack);
+              // generate random damage value based on player's attack power
+              var damage = randomNumber(playerAttack - 3, playerAttack);
 
-enemyHealth = Math.max(0, enemyHealth - damage);
+              enemyHealth = Math.max(0, enemyHealth - damage);
 
                     // Log a resulting message to the console so we know that it worked.
                         console.log(
